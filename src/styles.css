@@ -1,0 +1,182 @@
+/* I was a little confused if i was going to use another way to write css like with maybe scss or tailwind, but as i understand the test description i was not supposed to use any other than regular css */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  background-color: rgb(230, 230, 230);
+}
+
+.mainWrapper {
+  padding: 80px;
+}
+
+.filterTitle {
+  font-size: 70px;
+}
+
+.searchTitle {
+  font-size: 70px;
+  margin-top: 50px;
+}
+
+.filterWrapper {
+  height: 50px;
+  margin-top: 25px;
+  font-size: 40px;
+}
+
+.filterWrapper input {
+  height: 30px;
+  width: 30px;
+  margin-right: 15px;
+}
+
+.searchWrapper {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.searchWrapper input {
+  background-color: #ffffff;
+  font-size: 30px;
+  height: 60px;
+}
+
+.btn {
+  height: 35px;
+  width: 225px;
+  color: #fff;
+  background-color: #878787;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.searchWrapper p {
+  margin: 10px 0;
+  font-size: 10px;
+}
+
+.displayWrapper h2 {
+  margin-top: 25px;
+  font-size: 70px;
+}
+.displayWrapper hr {
+  height: 4px;
+  background-color: #676767;
+  margin-top: 25px;
+}
+
+.description {
+  margin-top: 25px;
+  font-size: 15px;
+}
+
+.displayWrapper h3 {
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: 100px;
+}
+
+.genreContainer {
+  flex-direction: row;
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.genreWrapper {
+  display: flex;
+}
+
+.genreBox {
+  width: 45%;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  display: flex;
+}
+
+.genreBox img {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.genreBox p {
+  font-size: 40px;
+}
+
+/* Media Queries */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .mainWrapper {
+    padding: 80px 200px;
+  }
+  .filterTitle {
+    font-size: 40px;
+  }
+  .searchTitle {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  .filterWrapper {
+    height: 20px;
+    font-size: 20px;
+  }
+  .filterWrapper input {
+    height: 20px;
+  }
+  .searchWrapper input {
+    font-size: 20px;
+    height: 35px;
+  }
+  .displayWrapper h2 {
+    font-size: 40px;
+  }
+  .description {
+    margin-bottom: 40px;
+    font-size: 13px;
+  }
+  .displayWrapper h3 {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .genreContainer {
+    margin-top: 5px;
+  }
+  .genreBox {
+    width: 43%;
+  }
+  .genreBox p {
+    font-size: 25px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .description {
+    font-size: 19px;
+  }
+  .searchWrapper p {
+    font-size: 20px;
+  }
+  .genreBox p {
+    font-size: 19px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .description {
+    font-size: 19px;
+  }
+  .genreBox {
+    width: 19.4%;
+  }
+  .genreBox p {
+    font-size: 19px;
+  }
+}
